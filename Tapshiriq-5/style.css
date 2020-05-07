@@ -1,0 +1,87 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --light-grey: #d8d9db;
+    --buttons-on-hover: #ebebeb;
+    --button-active-state: #bbbcbe;
+    --function-buttons: #df974c;
+    --function-buttons-on-hover: #dfb07e;
+    --function-button-active-state: #dd8d37;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ccc;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.contianer {
+    width: 40rem;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    
+}
+.screen{
+  background-color: var(--black);
+  color: var(--white);
+  padding: 20px 10px;
+  font-size: 30px;
+  text-align: right;
+}
+
+.btn, .btn-func{
+width: 100px;
+border-collapse: collapse;
+border: 0.5px solid black;
+border-left: none;
+float: left;
+height: 70px;
+font-weight: bold;
+font-size: 25px;
+border-bottom: none;
+}
+
+.clear{
+  width: 200px;
+}
+.zero{
+  width: 300px;
+}
+.btn{
+  background-color: var(--light-grey);
+
+}
+
+.btn-func{
+  background-color: var(--function-buttons);
+  color: var(--white);
+  border-right: none;
+}
+
+.btn:hover{
+  background-color: var(--buttons-on-hover);
+}
+
+.btn-func:hover{
+background-color: var(--function-buttons-on-hover);
+}
+
+.btn:active{
+  background-color: var(--button-active-state);
+}
+
+.btn-func:active{
+background-color: var(--function-button-active-state);
+}
